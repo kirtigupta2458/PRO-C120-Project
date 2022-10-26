@@ -19,9 +19,9 @@ from data_preprocessing import get_stem_words
 model = tensorflow.keras.models.load_model('./chatbot_model.h5')
 
 # Load data files
-intents = json.loads(open('./intents.json').read())
-words = pickle.load(open('./words.pkl','rb'))
-classes = pickle.load(open('./classes.pkl','rb'))
+intents = 
+words = 
+classes = 
 
 
 def preprocess_user_input(user_input):
@@ -68,11 +68,4 @@ def bot_response(user_imput):
     
 
 
-print("Hi I am Stella, How Can I help you?")
-
-while True:
-    user_input = input("Type your message here:")
-    print("User Input: ", user_input)
-
-    response = bot_response(user_input)
-    print("Bot Response: ", response)
+#run a while loop to ask the input and give the output
